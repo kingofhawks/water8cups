@@ -1,5 +1,6 @@
 package com.bigyellow.hm.rsconfig;
 
+import com.bigyellow.hm.rs.AppUserResource;
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
@@ -23,6 +24,7 @@ public class MyApplication extends ResourceConfig {
         register(JacksonFeature.class);
         register(DrinkRecordResource.class);
         register(EatRecordResource.class);
+        register(AppUserResource.class);
 
     }
 }

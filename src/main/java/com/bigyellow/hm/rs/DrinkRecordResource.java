@@ -18,6 +18,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
+import com.bigyellow.hm.entity.AppUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -225,7 +226,27 @@ public class DrinkRecordResource {
 		return result;
 	}
 
-	 
-	
+
+//    @Path("/users")
+//    @GET
+//    @Produces(MediaType.APPLICATION_JSON)
+//    @Consumes(MediaType.APPLICATION_JSON)
+//    public List<AppUser> getAppUsers() {
+//        logger.debug("getAppUsers now**** ");
+//        List<AppUser> result = this.dao.getAllUsers();
+//        return result;
+//    }
+//
+//    @Path("/users/{fid}")
+//    @GET
+//    @Produces(MediaType.APPLICATION_JSON)
+//    @Consumes(MediaType.APPLICATION_JSON)
+//    public AppUser getAppUserById(@PathParam("fid") String fid) {
+//        logger.debug("getAppUser now**** "+fid);
+//        AppUser result = this.dao.getUserById(Integer.valueOf(fid));
+//        return result;
+//    }
+
+
 
 }

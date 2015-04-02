@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+import com.bigyellow.hm.entity.AppUser;
 import com.bigyellow.hm.entity.DrinkRecord;
 
 public interface DrinkRecordDao extends BaseDao<Serializable, DrinkRecord>{
@@ -22,5 +23,18 @@ public interface DrinkRecordDao extends BaseDao<Serializable, DrinkRecord>{
 	
 	/* this api is used for upgrade older weixin subscribe user to weixin service */
 	void resolveOpenIDForOldSubscribeUser(String openID, String nickName);
+
+//    /**
+//     * 返回所有的AppUser对象
+//     * @return
+//     */
+//    List<AppUser> getAllUsers();
+//
+//    /**
+//     * 根据ID查询用户
+//     * @param id
+//     * @return
+//     */
+//    AppUser getUserById(int id);
 	
 }

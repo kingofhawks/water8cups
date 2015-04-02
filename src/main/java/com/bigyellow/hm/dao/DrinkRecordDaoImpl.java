@@ -1,13 +1,11 @@
 package com.bigyellow.hm.dao;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 import javax.persistence.Query;
 import javax.persistence.TemporalType;
 
+import com.bigyellow.hm.entity.AppUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
@@ -15,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.bigyellow.hm.common.DateUtil;
 import com.bigyellow.hm.entity.DrinkRecord;
+import org.springframework.util.CollectionUtils;
 
 @Repository(value = "DrinkRecordDaoImpl")
 @Transactional(readOnly = true)
@@ -115,7 +114,37 @@ public class DrinkRecordDaoImpl extends BaseJpaDaoSupport<Integer, DrinkRecord>
 		return result;
 	}
 
-	@Override
+//    @Override
+//    public List<AppUser> getAllUsers() {
+//        Query query = this.getEm().createNativeQuery(
+//                "SELECT * FROM REBA_tbl_APPUser", AppUser.class);
+//        List<AppUser> list = (List<AppUser>) query.getResultList();
+//        logger.info("AppUser size:"+list.size());
+//        for (AppUser user: list){
+//            logger.info("****user found****"+user);
+//        }
+//        return list;  //To change body of implemented methods use File | Settings | File Templates.
+//    }
+
+//    @Override
+//    public AppUser getUserById(int id) {
+//        Query query = this.getEm().createNativeQuery(
+//                "SELECT * FROM REBA_tbl_APPUser WHERE fid = :fid",AppUser.class);
+//        query.setParameter("fid", id);
+//        AppUser user = (AppUser)query.getSingleResult();
+////        List<AppUser> list = (List<AppUser>) query.getResultList();
+////        if (CollectionUtils.isEmpty(list)){
+////            return null;
+////        }else{
+////            logger.info("AppUser found:"+list.get(0));
+////            return list.get(0);  //To change body of implemented methods use File | Settings | File Templates
+////        }
+//
+//        return user;
+//
+//    }
+//
+    @Override
 	public List<DrinkRecord> getRecordsWithUidNotNull() {
 		List<DrinkRecord> result = new ArrayList<DrinkRecord>();
 		Query query = this.getEm()
