@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jdbc 
+                           http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<context:component-scan base-package="com.bigyellow.hm" />
+    <tx:annotation-driven />
+    <context:annotation-config />
+    
+    <bean id="transactionManager" 
+          class="org.springframework.orm.jpa.JpaTransactionManager"
+          p:entityManagerFactory-ref="entityManagerFactory"/>
+    
+		
+    <bean id="entityManagerFactory" 
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    	  p:persistenceUnitName="ams">
+    	<property name="dataSource" ref="dataSource" />
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+        </property>
+    </bean>
+    
+    <bean id="dataSource"
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!-- product mode
+		<property name="username" value="qz_wechat" />
+        <property name="password" value="qzwechat" />
+        <property name="driverClassName" value="org.mariadb.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://10.66.116.252:3306/qz_wechat?useUnicode=true&amp;characterEncoding=UTF-8" />
+       	 -->
+       	
+        <!-- online test mode 
+		<property name="username" value="qz_wechat" />
+        <property name="password" value="qzwechat" />
+        <property name="driverClassName" value="org.mariadb.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://10.66.116.252:3306/qz_wechat_test?useUnicode=true&amp;characterEncoding=UTF-8" />
+         -->
+         
+        <!--  local test mode
+        <property name="username" value="sa" />
+        <property name="password" value="" />
+        <property name="driverClassName" value="org.hsqldb.jdbcDriver" />
+        <property name="url" value="jdbc:hsqldb:mem:healthmanager" />
+          -->
+
+        <!-- local test mode -->
+        <property name="username" value="root" />
+        <property name="password" value="lazio_2000" />
+        <property name="driverClassName" value="org.mariadb.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://192.168.153.114:3306/db20140701?useUnicode=true&amp;characterEncoding=utf8" />
+
+       	
+    </bean>
+    
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource" >
+		<property name="basenames">
+	        <list>
+	            <value>classpath:ValidatorMessages.properties</value>
+	            <value>classpath:ServerMessages</value>
+	        </list>
+	    </property>
+		<property name="defaultEncoding" value="UTF-8"/>
+	</bean>
+    
+</beans>

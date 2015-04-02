@@ -1,0 +1,326 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-image: url('../images/bg.png');
+	background-position: center center;
+	background-size: 175%;
+	background-repeat: repeat;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.separator {
+	padding: 0 5px;
+}
+
+#floatingLayer {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: #000;
+	opacity: 0.8;
+	position: fixed;
+	z-index: 104;
+}
+
+#arrow {
+	position: absolute;
+	width: 56px;
+	height: 40px;
+}
+
+#cup1 {
+	z-index: 105;
+	position: relative;
+}
+
+.floatingText,
+.floatingText div {
+	position: absolute;
+}
+
+#floatingText {
+	white-space: nowrap;
+}
+
+#leftMark,
+#rightMark {
+	font-size: 35px;
+}
+
+#drinkMen {
+	font-size: 12px;
+	padding: 10px 0 6px;
+	color: #aeb4c6;
+	text-align: center;
+}
+
+#waterCup {
+	height: 34px;
+	width: 23px;
+	margin: 4px 10px 0 0;
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#contentHeader {
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	-vendor-animation-duration: 1s;
+	-vendor-animation-delay: 1s;
+	-vendor-animation-iteration-count: infinite;
+}
+
+#contentHeaderText {
+	font-size: 15px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 38px;
+}
+
+#floater {
+	float: left;
+	height: 40%;
+	margin-bottom: -90px;
+}
+
+#content {
+	width: 100%;
+	position: absolute;
+}
+
+.main {
+	min-height: 100%;
+	height: 100%;
+	height: 100%;
+	margin: 0 auto -32px;
+}
+
+#footer {
+	font-size: 15px;
+	color: #fff;
+	position: fixed;
+	right: 0;
+	bottom:0;
+	padding-bottom: 10px;
+}
+
+#footer a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#footer a.selected {
+	color: white;
+}
+
+#footer a:link {
+	color: white;
+}
+
+#footer a:visited {
+	color: white;
+}
+
+#footer a:hover {
+	color: white;
+}
+
+#footer a:active {
+	color: white;
+}
+
+.cuptr {
+	height: 100px;
+	text-align: center;
+}
+
+.cuptd {
+	height: 100px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.cupCenterTd {
+	height: 90px;
+	vertical-align: middle;
+}
+
+.plus {
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+}
+
+.circleBox{
+	display: inline-block; width: 85px; height: 85px;
+}
+
+.circle {
+	width: 85px;
+	height: 85px;
+	top:50%;margin-top:-42.5px;left:50%;margin-left:-42.5px;
+}
+
+.circleText {
+	position: absolute;
+	z-index: 10;
+	vertical-align: middle;
+}
+
+.cupText {
+	margin-top: -12.5px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-shadow: 0 0 2px #2b263a,0 0 2px #2b263a,0 0 2px #2b263a,0 0 2px #2b263a,0 0 2px #2b263a,0 0 2px #2b263a;
+	/**-webkit-text-fill-color: white;
+	-webkit-text-stroke: 2px #2b263a;*/
+}
+.circleCenterStyle {
+	position: absolute;
+	vertical-align: middle;
+	width: 85px;
+	height:85px;
+	line-height: 85px;
+}
+
+.overlayText {
+	position: absolute;
+	z-index: 10;
+}
+
+.cupTimeHour {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.cupTimeMin {
+	font-style: italic;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.glow:hover {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s -moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: #37a6de 0 0 1px;
+	/* Create Shadow around our "Box" with COLOR:#37a6de and Position X-offset:0 Y-offset:0 and "Distance of Shadow":1px. I Assume #37a6de as Background color of Twitter Icon */
+}
+
+.glow_off {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s;
+	-moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: #00FFE0 0 0 1px;
+	/* Create Shadow around our "Box" with COLOR:#37a6de and Position X-offset:0 Y-offset:0 and "Distance of Shadow":1px. I Assume #37a6de as Background color of Twitter Icon */
+}
+
+.glow {
+	-o-transition: 1s; /*exactly*/
+	transition: 1s; /*the*/
+     -moz-transition:1s; /*same*/
+	-webkit-transition: 1s; /*as*/
+	border-radius: 100px; /*over*/
+	box-shadow: #00FFE0 0 0 30px; /*We just changed "distance of shadow" */
+}
+
+#historyBtn {
+	position: fixed;
+	left: 20px;
+	bottom: 10px;
+	display: none;	
+}
+
+#historyBtn span {
+	display: inline-block;
+	position: fixed;	
+}
+
+#historyOuter {
+	width: 85px;
+	height: 85px;
+	bottom: -25px;
+	left: -14px;
+	border-radius: 100px;
+}
+
+#historyInner {
+	width: 81px;
+	height: 81px;
+	bottom: -23px;
+	left: -12px;
+	border-radius: 100px;
+	background: -webkit-gradient(radial,40.5 40.5,0,40.5 40.5,40.5, from(#0e0c13), to(#070609));
+	background: -moz-radial-gradient(40.5px 40.5px, circle farthest-corner, #0e0c13 100%, #070609 100%);
+	box-shadow: #2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px;
+}
+
+#historyText {
+	bottom: 10px;
+	left: 15px;
+}
+
+.history_outer {
+	-o-transition: 1s; /*exactly*/
+	transition: 1s; /*the*/
+     -moz-transition:1s; /*same*/
+	-webkit-transition: 1s; /*as*/
+	border-radius: 100px; /*over*/
+	box-shadow: rgba(187,235,255,.23) 0 0 30px; /*We just changed "distance of shadow" */
+}
+
+.history_outer_off {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s;
+	-moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: rgba(187,235,255,.23) 0 0 1px;
+}
+
+.history_inner {
+	-o-transition: 1s; /*exactly*/
+	transition: 1s; /*the*/
+     -moz-transition:1s; /*same*/
+	-webkit-transition: 1s; /*as*/
+	border-radius: 100px; /*over*/
+	box-shadow: rgba(187,235,255,.3) 0 0 15px; /*We just changed "distance of shadow" */
+}
+
+.history_inner_off {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s;
+	-moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: rgba(187,235,255,.3) 0 0 5px;
+}

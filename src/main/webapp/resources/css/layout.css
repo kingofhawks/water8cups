@@ -1,0 +1,199 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-image: url('/healthmanager/resources/images/bg.png');
+	background-position: center center;
+	background-size: 175%;
+	background-repeat: repeat;
+	color: white;
+}
+
+#drinkMen {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 0px 5px 20px;
+	color: #aeb4c6;
+	text-align: center;
+}
+
+#contentHeader {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px 20px 0px 20px;
+}
+
+#contentBody {
+	/**margin-left: 15px;*/
+	height: 99%;
+}
+
+#floater {
+	float: left;
+	height: 40%;
+	margin-bottom: -90px;
+}
+
+#content {
+	clear: both;
+	width: 100%;
+	height: 355px;
+	top:50%;
+	position: absolute;
+	margin-top:-177.5px;
+}
+
+.main {
+	min-height: 100%;
+	height: 100%;
+	height: 100%;
+	margin: 0 auto -32px;
+}
+
+.footer {
+	height: 60px;
+	clear: both;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #C8C8C8;
+	padding-left: 20px;
+}
+
+.footer a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.footer a.selected {
+	color: white;
+}
+
+.footer a:link {
+	color: white;
+}
+
+.footer a:visited {
+	color: white;
+}
+
+.footer a:hover {
+	color: white;
+}
+
+.footer a:active {
+	color: white;
+}
+
+.cuptr {
+	height: 100px;
+	text-align: center;
+}
+
+.cuptd {
+	height: 100px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.cupCenterTd {
+	height: 90px;
+	vertical-align: middle;
+}
+
+.circle {
+	width: 85px;
+	height: 85px;
+}
+
+.circleText {
+	position: absolute;
+	z-index: 10;
+	vertical-align: middle;
+}
+
+.cupText {
+	/**margin-top: 20px;*/
+	font-style: italic;
+	font-weight: bold;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-shadow: 2px 0 0 #2b263a, 0 2px 0 #2b263a, 0 -2px 0px #2b263a,
+		-2px 0 0px #2b263a;
+	/**-webkit-text-fill-color: white;
+	-webkit-text-stroke: 2px #2b263a;*/
+}
+.circleCenterStyle {
+	float: left;
+	position: absolute;
+	vertical-align: middle;
+	width: 33%;
+	line-height: 118px;
+}
+.circleCenterStyle2 {
+	float: right;
+	position: absolute;
+	vertical-align: middle;
+	width: 33%;
+	line-height: 118px;
+}
+
+.overlayText {
+	position: absolute;
+	z-index: 10;
+}
+
+.cupTimeHour {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.cupTimeMin {
+	font-style: italic;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.glow:hover {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s -moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: #37a6de 0 0 1px;
+	/* Create Shadow around our "Box" with COLOR:#37a6de and Position X-offset:0 Y-offset:0 and "Distance of Shadow":1px. I Assume #37a6de as Background color of Twitter Icon */
+}
+
+.glow_off {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s -moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: #00FFE0 0 0 1px;
+	/* Create Shadow around our "Box" with COLOR:#37a6de and Position X-offset:0 Y-offset:0 and "Distance of Shadow":1px. I Assume #37a6de as Background color of Twitter Icon */
+}
+
+.glow {
+	-o-transition: 1s; /*exactly*/
+	transition: 1s /*the*/
+     -moz-transition:1s; /*same*/
+	-webkit-transition: 1s; /*as*/
+	border-radius: 100px; /*over*/
+	box-shadow: #00FFE0 0 0 30px; /*We just changed "distance of shadow"*/
+}

@@ -1,0 +1,228 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {	
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.separator {
+	padding: 0 5px;
+}
+
+.background {
+	background-image: url('../images/history_bg.png');
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+
+.item {
+	display: none;
+	margin-top: 44px;
+	height: 26px;
+	line-height: 26px;
+}
+
+.planet {
+	display: inline-block;
+}
+
+.planet,
+.planet img,
+.star img {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+.planet img {
+	margin-top: -15px;
+}
+
+.planet .line {
+	height: auto;
+	margin-top: -70px;
+}
+
+.star {
+	width: 60px;
+	float: right;
+	vertical-align: middle;
+}
+
+.star img {
+	margin-right: 5px;	
+	margin-top: 5px;
+}
+
+.star .unfinished {
+	width: 60px;
+	height: 30px;
+	margin-top: -4px;
+}
+
+.days {
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#more {
+	display: none;
+	text-align: center;
+	padding: 44px 0 64px;
+	opacity: 0.3;
+}
+
+#todayBtn {
+	position: fixed;
+	left: 20px;
+	bottom: 10px;
+	z-index: 2;
+}
+
+#todayBtn span {
+	display: inline-block;
+	position: fixed;	
+}
+
+#todayOuter {
+	width: 85px;
+	height: 85px;
+	bottom: -25px;
+	left: -14px;
+	border-radius: 100px;
+}
+
+#todayInner {
+	width: 81px;
+	height: 81px;
+	bottom: -23px;
+	left: -12px;
+	border-radius: 100px;
+	background: -webkit-gradient(radial,40.5 40.5,0,40.5 40.5,40.5, from(#0e0c13), to(#070609));
+	background: -moz-radial-gradient(40.5px 40.5px, circle farthest-corner, #0e0c13 100%, #070609 100%);
+	box-shadow: #2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px,#2b263a 0 0 2px;
+}
+
+#todayText {
+	bottom: 10px;
+	left: 15px;
+	color: #fff;
+}
+
+.today_outer {
+	-o-transition: 1s; /*exactly*/
+	transition: 1s; /*the*/
+     -moz-transition:1s; /*same*/
+	-webkit-transition: 1s; /*as*/
+	border-radius: 100px; /*over*/
+	box-shadow: rgba(187,235,255,.23) 0 0 30px; /*We just changed "distance of shadow" */
+}
+
+.today_outer_off {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s;
+	-moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: rgba(187,235,255,.23) 0 0 1px;
+}
+
+.today_inner {
+	-o-transition: 1s; /*exactly*/
+	transition: 1s; /*the*/
+     -moz-transition:1s; /*same*/
+	-webkit-transition: 1s; /*as*/
+	border-radius: 100px; /*over*/
+	box-shadow: rgba(187,235,255,.3) 0 0 15px; /*We just changed "distance of shadow" */
+}
+
+.today_inner_off {
+	-o-transition: 1s; /* Need for Transition on Opera */
+	transition: 1s;
+	-moz-transition:1s; /*Transition on Firefox */
+	-webkit-transition: 1s; /*Transition on Chrome-Safari */
+	border-radius: 100%;
+	/* Border Radius makes your "Box" with round angles, we set a 100% value to make a "circle" */
+	box-shadow: rgba(187,235,255,.3) 0 0 5px;
+}
+
+#footer {
+	font-size: 15px;
+	color: #fff;
+	width: 100%;
+	height: 45px;
+	z-index: 1;
+	background-color: #2b263a;
+}
+
+#footer,
+#footer a {	
+	position: fixed;
+	right: 0;
+	bottom:0;
+}
+
+#footer a {
+	cursor: pointer;
+	text-decoration: none;
+	padding-bottom: 10px;
+
+}
+
+#footer a.selected {
+	color: white;
+}
+
+#footer a:link {
+	color: white;
+}
+
+#footer a:visited {
+	color: white;
+}
+
+#footer a:hover {
+	color: white;
+}
+
+#footer a:active {
+	color: white;
+}
+
+.plus {
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+}
+
+#drinkMen {
+	font-size: 12px;
+	padding: 10px 0 6px;
+	color: #aeb4c6;
+	text-align: center;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #2b263a;
+	z-index: 1;
+}
