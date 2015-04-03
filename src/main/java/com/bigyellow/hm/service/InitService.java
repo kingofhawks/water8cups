@@ -38,8 +38,8 @@ public class InitService {
 	@PostConstruct
 	public void init() {
 		logger.info("================init===============");
-		upgradeDrinkRecord();
-		upgradeEatRecord();
+//		upgradeDrinkRecord();
+//		upgradeEatRecord();
 	}
 
 	private void upgradeDrinkRecord() {
