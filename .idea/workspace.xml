@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1455e46b-dd15-4083-ba2c-58e8f651d68f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqljdbc4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/service/InitService.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/service/InitService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/20150427-APP_tbl_CheckRecord.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/20150427-APP_tbl_CheckRecordDetail.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/20150427-APP_tbl_User.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/20150428-APP_PROC_CheckRecordQuery.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/20150428-APP_PROC_CheckRecordUpdate.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/CheckRecord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/模拟数据.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/AppUserResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/AppUserResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logging.log" afterPath="$PROJECT_DIR$/logging.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="water8cups.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1428034744154" ignored="false" />
+    <file path="/Dummy.txt" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1430812924899" ignored="false" />
     <file path="/a.dummy" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427984467557" ignored="false" />
     <file path="/applicationContext.xml" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1428051241194" ignored="false" />
     <file path="/persistence.xml" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1428036520003" ignored="false" />
@@ -21,10 +26,12 @@
     <file path="/AppUser.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427977759315" ignored="false" />
     <file path="/DrinkRecordDaoImpl.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427981143298" ignored="false" />
     <file path="/DrinkRecordResource.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427983467674" ignored="false" />
-    <file path="/fragment.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427983597318" ignored="false" />
-    <file path="/AppUserDaoImpl.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427983563800" ignored="false" />
-    <file path="/AppUserResource.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427987358543" ignored="false" />
+    <file path="/fragment.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1430831123785" ignored="false" />
+    <file path="/AppUserDaoImpl.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1430835475271" ignored="false" />
+    <file path="/AppUserResource.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1430835020196" ignored="false" />
     <file path="/MyApplication.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1427984038559" ignored="false" />
+    <file path="/AppUserDao.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1430834620821" ignored="false" />
+    <file path="/ApprovalRecord.java" changelist="1455e46b-dd15-4083-ba2c-58e8f651d68f" time="1430834265219" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -75,7 +83,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -85,46 +92,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InitService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/service/InitService.java">
+      <file leaf-file-name="AppUserDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="5" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
+            <state line="24" column="36" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <file leaf-file-name="20150427-APP_tbl_CheckRecord.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/20150427-APP_tbl_CheckRecord.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="20" selection-start="4514" selection-end="4514" vertical-scroll-proportion="-9.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="25" selection-start="3353" selection-end="3353" vertical-scroll-proportion="-10.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="34" selection-start="7964" selection-end="7973" vertical-scroll-proportion="-13.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyApplication.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rsconfig/MyApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="46" selection-start="557" selection-end="557" vertical-scroll-proportion="0.46254683">
+            <state line="21" column="1" selection-start="287" selection-end="287" vertical-scroll-proportion="-4.42">
               <folding />
             </state>
           </provider>
@@ -133,31 +113,36 @@
       <file leaf-file-name="AppUserDaoImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="59" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
+            <state line="89" column="48" selection-start="4082" selection-end="4082" vertical-scroll-proportion="-6.12">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppUserResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/AppUserResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="37" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="20150428-APP_PROC_CheckRecordQuery.sql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/20150428-APP_PROC_CheckRecordQuery.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="3086" selection-end="3086" vertical-scroll-proportion="-12.461538">
+            <state line="57" column="36" selection-start="1368" selection-end="1368" vertical-scroll-proportion="3.8678572">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme0403.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme0403.txt">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="20150428-APP_PROC_CheckRecordUpdate.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/20150428-APP_PROC_CheckRecordUpdate.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="39" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-5.8846154">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.46">
               <folding />
             </state>
           </provider>
@@ -166,16 +151,16 @@
       <file leaf-file-name="AppUser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/AppUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+            <state line="16" column="25" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.sql">
+      <file leaf-file-name="CheckRecord.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/CheckRecord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="-4.56">
+            <state line="22" column="44" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,19 +185,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/AppUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rsconfig/MyApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/DrinkRecordDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/DrinkRecordResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/DrinkRecordDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/AppUserResource.java" />
         <option value="$PROJECT_DIR$/20150330-REBA_tbl_APPUser.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/service/InitService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/readme0403.txt" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/ApprovalRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/AppUserResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -248,6 +234,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,135 +253,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="water8cups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rsconfig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -413,20 +273,22 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="E:\SkyDrive\Workspace\water8cups\lib" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="Downloaded.Files.Path" value="E:\SkyDrive\Workspace\water8cups\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bigyellow.hm.entity" />
       <recent name="com.bigyellow.hm.rs" />
       <recent name="com.bigyellow.hm.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SkyDrive\Workspace\water8cups\sql" />
       <recent name="E:\SkyDrive\Workspace\water8cups" />
       <recent name="G:\OneDrive\Workspace\water8cups\lib" />
       <recent name="E:\SkyDrive\Workspace\water8cups\lib" />
@@ -445,19 +307,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -486,6 +335,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -546,6 +408,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32761577" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -558,15 +421,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2901515" sideWeight="0.67201424" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2901515" sideWeight="0.6723842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32798573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32798573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32798573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -635,110 +497,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/DrinkRecordDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="99" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/DrinkRecordDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="53" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/DrinkRecordResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="46" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="281" selection-end="281" vertical-scroll-proportion="0.33125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/BaseJpaDaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="16" selection-start="1265" selection-end="1268" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/AppUserResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="839" selection-end="854" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="34" selection-start="7964" selection-end="7973" vertical-scroll-proportion="-13.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="20" selection-start="4514" selection-end="4514" vertical-scroll-proportion="-9.96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="25" selection-start="3353" selection-end="3353" vertical-scroll-proportion="-10.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="-4.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="3086" selection-end="3086" vertical-scroll-proportion="-12.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme0403.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="39" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/AppUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="59" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/service/InitService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="5" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
@@ -748,7 +506,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rsconfig/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="46" selection-start="557" selection-end="557" vertical-scroll-proportion="0.46254683">
+        <state line="19" column="54" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/20150427-APP_tbl_CheckRecord.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="1" selection-start="287" selection-end="287" vertical-scroll-proportion="-4.42">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.6384778">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/20150428-APP_PROC_CheckRecordUpdate.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.46">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme0403.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="13" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/ParameterMode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="159" selection-end="159" vertical-scroll-proportion="0.32094595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="32" selection-start="2799" selection-end="2799" vertical-scroll-proportion="-4.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/StoredProcedureQuery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="42" selection-start="1663" selection-end="1701" vertical-scroll-proportion="0.6289753">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/EntityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="43" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.36042404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/AppUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="25" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/entity/CheckRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="44" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="36" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/rs/AppUserResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="37" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bigyellow/hm/dao/AppUserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="48" selection-start="4082" selection-end="4082" vertical-scroll-proportion="-6.12">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/20150428-APP_PROC_CheckRecordQuery.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="36" selection-start="1368" selection-end="1368" vertical-scroll-proportion="3.8678572">
           <folding />
         </state>
       </provider>

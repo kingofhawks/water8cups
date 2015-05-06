@@ -59,7 +59,10 @@ public class AppUserResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public AppUser getAppUserById(@PathParam("fid") String fid) {
         logger.debug("getAppUser now**** "+fid);
-        AppUser result = this.dao.getUserById(Integer.valueOf(fid));
+//        AppUser result = this.dao.getUserById(Integer.valueOf(fid));
+        AppUser result = this.dao.getUserById2(Integer.valueOf(fid));
+
+        this.dao.updateCheckRecord();
         return result;
     }
 

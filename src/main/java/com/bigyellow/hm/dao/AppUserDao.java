@@ -19,5 +19,9 @@ public interface AppUserDao extends BaseDao<Serializable, AppUser>{
      * @return
      */
     AppUser getUserById(int id);
+
+    AppUser getUserById2(int id);
+
+    public void updateCheckRecord();
 	
 }
